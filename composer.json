@@ -1,0 +1,31 @@
+{
+    "name": "wlevpay/levpay",
+    "description": "Alipay,WeChat laravel支付扩展包",
+    "keywords": ["alipay", "wechat", "pay", "laravel", "package","Wlevpay"],
+    "authors": [
+        {
+            "name": "Wlevpay",
+            "email": "six@Wlevpay.cn"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^5.1",
+        "yansongda/pay": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wlevpay\\LaravelPay\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Wlevpay\\LaravelPay\\PayServiceProvider"
+            ],
+            "aliases": {
+                "Pay": "Wlevpay\\LaravelPay\\Facades\\Pay"
+            }
+        }
+    },
+    "license": "MIT"
+}
